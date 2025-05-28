@@ -3,9 +3,10 @@ from selenium.webdriver.common.by import By
 import pytest
 from pages.HomePage import HomePage
 from pages.LoginPage import LoginPage
+from tests.BaseTest import BaseTest
 
-@pytest.mark.usefixtures("setup_browser")
-class TestLogin:
+
+class TestLogin(BaseTest):
 
     base_url = "https://tutorialsninja.com/demo/index.php"
 

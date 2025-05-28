@@ -1,26 +1,20 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from pages.BasePage import BasePage
 
+class LoginPage(BasePage):
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.wait = WebDriverWait(driver, 10)
 
-class LoginPage:
-    def __init__(self,driver):
-        self.driver=driver
-
-
-
-    login_successful_message_xpath = "//h2[text()='My Account']"
+        # Locators
+        self.login_successful_message = (By.XPATH, "//h2[text()='My Account']")
 
     def is_login_successful(self):
-        """Wait for the 'My Account' heading to appear after login."""
-        try:
-            wait = WebDriverWait(self.driver, 10)
-            heading = wait.until(EC.visibility_of_element_located((By.XPATH, self.login_successful_message_xpath)))
-            return heading.is_displayed()
-        except TimeoutException:
-            return False
+        """Use BasePage's is_displayed method to check login success."""
+        return self.is_displayed(self.login_successful_message)
 
 
 
