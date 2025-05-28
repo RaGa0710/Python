@@ -1,0 +1,7 @@
+[INFO] No popup to close
+[INFO] Opening registration page
+[INFO] Filling registration form with mandatory fields
+[INFO] No popup to close
+[INFO] Confirmation: 'Your Account Has Been Created!'
+[INFO] Attempting logout
+[INFO] Successfully logged out

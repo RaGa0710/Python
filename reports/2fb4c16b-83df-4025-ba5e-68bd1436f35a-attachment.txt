@@ -1,0 +1,4 @@
+[INFO] No popup to close
+[INFO] Opening registration page
+[INFO] Filling registration form with mandatory fields
+[INFO] Warning: 'Warning: E-Mail Address is already registered!'

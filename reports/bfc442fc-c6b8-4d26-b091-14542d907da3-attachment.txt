@@ -1,0 +1,9 @@
+[INFO] No popup to close
+[INFO] Opening registration page
+[INFO] Filling registration form with mandatory fields
+[INFO] Warning: 'Warning: You must agree to the Privacy Policy!'
+[INFO] Warning: 'First Name must be between 1 and 32 characters!'
+[INFO] Warning: 'Last Name must be between 1 and 32 characters!'
+[INFO] Warning: 'E-Mail Address does not appear to be valid!'
+[INFO] Warning: 'Telephone must be between 3 and 32 characters!'
+[INFO] Warning: 'Password must be between 4 and 20 characters!'
